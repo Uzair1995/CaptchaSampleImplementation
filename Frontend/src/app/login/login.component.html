@@ -1,0 +1,28 @@
+<h3>Login Form</h3>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="clientId">
+      Client ID
+    </label>
+    <input class="form-control" id="clientId" type="text" formControlName="clientId">
+  </div>
+
+  <div>
+    <label for="clientSecret">
+      Client Secret
+    </label>
+    <input class="form-control" id="clientSecret" type="password" formControlName="clientSecret">
+  </div>
+
+  <re-captcha class="form-control" formControlName="recaptchaReactive" [siteKey]="ReCaptha_SITE_KEY"></re-captcha>
+
+  <br>
+  <button class="button" type="submit">Login</button>
+</form>
+
+<br><br>
+<span *ngIf="showSuccess">Login Success! Now you can access other APIs.</span>
+<span *ngIf="showInvalidCredentialsError">Invalid entered client credentials.</span>
+<div *ngIf="showGeneralError">{{this.generalErrors}}</div>
