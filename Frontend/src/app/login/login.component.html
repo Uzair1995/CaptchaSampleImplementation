@@ -1,35 +1,41 @@
-<h3>Login Form</h3>
-
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-
-  <div>
-    <label for="clientId">
-      Client ID
-    </label>
-    <input class="form-control" id="clientId" type="text" formControlName="clientId">
-  </div>
-
-  <div>
-    <label for="clientSecret">
-      Client Secret
-    </label>
-    <input class="form-control" id="clientSecret" type="password" formControlName="clientSecret">
-  </div>
-
-  <re-captcha class="form-control" formControlName="recaptchaReactive" [siteKey]="ReCaptha_SITE_KEY"></re-captcha>
-
+<div class="container">
   <br>
-  <button class="button" type="submit">Login</button>
-</form>
+  <h3>Login Form</h3>
+  <br>
+  <div class="card card-body bg-light">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="clientId">
+          Client ID
+        </label>
+        <input class="form-control" id="clientId" type="text" formControlName="clientId">
+      </div>
+      <br>
+      <div>
+        <label for="clientSecret">
+          Client Secret
+        </label>
+        <input class="form-control" id="clientSecret" type="password" formControlName="clientSecret">
+      </div>
+      <br>
+      <re-captcha formControlName="recaptchaReactive" [siteKey]="ReCaptha_SITE_KEY"></re-captcha>
+      <br>
+      <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+
 
 <br><br>
-<span *ngIf="!showSuccess">
-  Login Success! Now you can access other APIs.
-  <br>
-  <a routerLink="/personaldetailsfirstlevel" class="button fancy-button">
-    Open Personal Details First Level API Form
-  </a>  
-</span>
-<span *ngIf="showInvalidCredentialsError">Invalid entered client credentials.</span>
-<div *ngIf="showGeneralError">{{this.generalErrors}}</div>
-
+<div class="container">
+  <span style="color: green;" *ngIf="!showSuccess">
+    Login Success! Now you can access other APIs.
+    <br>
+    <a routerLink="/PersonalDetailsFirstLevel" class="button fancy-button">
+      Open Personal Details First Level API Form
+    </a>
+  </span>
+  <span style="color: red;" *ngIf="showInvalidCredentialsError">Invalid client credentials entered!</span>
+</div>
+<div class="container" style="color: red;" *ngIf="showGeneralError">{{this.generalErrors}}</div>

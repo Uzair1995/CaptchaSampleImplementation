@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
@@ -10,6 +9,18 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { LoginComponent } from './login/login.component';
 import { PersonalDetailsFirstLevelComponent } from './personal-details-first-level/personal-details-first-level.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PersonalDetailsSecondLevelComponent } from './personal-details-second-level/personal-details-second-level.component';
+import { PersonalDetailsThirdLevelComponent } from './personal-details-third-level/personal-details-third-level.component';
+import { IDInformationComponent } from './idinformation/idinformation.component';
+import { IncomeDetailsComponent } from './income-details/income-details.component';
+import { RiskAcceptanceComponent } from './risk-acceptance/risk-acceptance.component';
+import { FinancialSituationComponent } from './financial-situation/financial-situation.component';
+import { InvestmentExperienceComponent } from './investment-experience/investment-experience.component';
+import { IdentificationProofComponent } from './identification-proof/identification-proof.component';
+import { DisclosuresComponent } from './disclosures/disclosures.component';
+import { FundingDetailsComponent } from './funding-details/funding-details.component';
+import { SignaturesComponent } from './signatures/signatures.component';
+import { BreadCrumbsComponent } from './bread-crumbs/bread-crumbs.component';
 
 
 @NgModule({
@@ -19,9 +30,6 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     RecaptchaModule,  //this is the recaptcha main module
     RecaptchaFormsModule, //this is the module for form incase form validation
-    // RouterModule.forRoot([
-    //   { path: 'login', component: LoginComponent },
-    // ]),
     AppRoutingModule
   ],
   declarations: [
@@ -29,20 +37,18 @@ import { AppRoutingModule } from './app-routing.module';
     TopBarComponent,
     LoginComponent,
     PersonalDetailsFirstLevelComponent,
-
-    // PersonalDetailsFirstLevel
-    // PersonalDetailsSecondLevel
-    // PersonalDetailsThirdLevel
-    // IDInformation
-    // IncomeDetails
-    // RiskAcceptance
-    // FinancialSituation
-    // InvestmentExperience
-    // IdentificationProof
-    // Disclosures
-    // FundingDetails
-    // Signatures
-
+    PersonalDetailsSecondLevelComponent,
+    PersonalDetailsThirdLevelComponent,
+    IDInformationComponent,
+    IncomeDetailsComponent,
+    RiskAcceptanceComponent,
+    FinancialSituationComponent,
+    InvestmentExperienceComponent,
+    IdentificationProofComponent,
+    DisclosuresComponent,
+    FundingDetailsComponent,
+    SignaturesComponent,
+    BreadCrumbsComponent
   ],
   bootstrap: [
     AppComponent
