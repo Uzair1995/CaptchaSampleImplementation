@@ -23,6 +23,13 @@
 </form>
 
 <br><br>
-<span *ngIf="showSuccess">Login Success! Now you can access other APIs.</span>
+<span *ngIf="!showSuccess">
+  Login Success! Now you can access other APIs.
+  <br>
+  <a routerLink="/personaldetailsfirstlevel" class="button fancy-button">
+    Open Personal Details First Level API Form
+  </a>  
+</span>
 <span *ngIf="showInvalidCredentialsError">Invalid entered client credentials.</span>
 <div *ngIf="showGeneralError">{{this.generalErrors}}</div>
+

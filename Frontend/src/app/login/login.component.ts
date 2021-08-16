@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
     this.showInvalidCredentialsError = false;
     this.showGeneralError = false;
     this.showSuccess = false;
-
     try {
       let response = await this.LoginRequest(this.checkoutForm.value.clientId, this.checkoutForm.value.clientSecret, this.checkoutForm.value.recaptchaReactive);
       Configurations.AccessToken = response.data.access_token;
@@ -49,8 +48,8 @@ export class LoginComponent implements OnInit {
       }
       else
         this.showInvalidCredentialsError = true;
+      this.checkoutForm.reset();
     }
-    this.checkoutForm.reset();
   }
 
   async LoginRequest(clientId: string, clientSecret: string, captchaToken: string): Promise<any> {

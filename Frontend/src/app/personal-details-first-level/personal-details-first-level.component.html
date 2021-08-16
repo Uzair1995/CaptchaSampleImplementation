@@ -1,0 +1,17 @@
+<h3>Personal Details First Level</h3>
+
+<div class="container" style="padding:20px">
+    <div class="card card-body bg-light">
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="rawDataString">
+                    Enter JSON data for API:
+                </label>
+                <textarea rows="40" cols="150" class="form-control" id="rawDataString" type="text"
+                    formControlName="rawDataString"></textarea>
+            </div>
+            <br>
+            <button class="btn btn-primary mt-4" type="submit">Call API</button>
+        </form>
+    </div>
+</div>
