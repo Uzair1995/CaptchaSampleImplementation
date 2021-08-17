@@ -21,21 +21,18 @@
       <re-captcha formControlName="recaptchaReactive" [siteKey]="ReCaptha_SITE_KEY"></re-captcha>
       <br>
       <button class="btn btn-primary" type="submit">Login</button>
+      <span style="color: green; float: right;" *ngIf="showSuccess">
+        Login Success! Now you can access other APIs.
+        <br>
+        <a routerLink="/PersonalDetailsFirstLevel" class="button fancy-button">
+          Open Personal Details First Level API Form
+        </a>
+      </span>
+      <span style="color: red; float: right;" *ngIf="showInvalidCredentialsError">Invalid client credentials entered!</span>
     </form>
   </div>
 </div>
-
-
-
-<br><br>
+<br>
 <div class="container">
-  <span style="color: green;" *ngIf="!showSuccess">
-    Login Success! Now you can access other APIs.
-    <br>
-    <a routerLink="/PersonalDetailsFirstLevel" class="button fancy-button">
-      Open Personal Details First Level API Form
-    </a>
-  </span>
-  <span style="color: red;" *ngIf="showInvalidCredentialsError">Invalid client credentials entered!</span>
+  <span class="container" style="color: red;" *ngIf="showGeneralError">{{this.generalErrors}}</span>
 </div>
-<div class="container" style="color: red;" *ngIf="showGeneralError">{{this.generalErrors}}</div>

@@ -61,6 +61,8 @@ export class LoginComponent implements OnInit {
       method: 'POST',
       url: `${Configurations.BASE_URL}/api/connect/token`,
       headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': 'true',
         'Authorization': 'Basic ' + btoa(`${clientId}:${clientSecret}`),
         'Content-Type': 'application/x-www-form-urlencoded'
       },

@@ -1,18 +1,22 @@
 <div class="container">
-    <br>
     <h3>Personal Details First Level</h3>
-    <br>
     <div class="card card-body bg-light">
         <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
             <div>
                 <label for="rawDataString">
                     Enter JSON data for API:
                 </label>
-                <textarea rows="35" class="form-control" id="rawDataString" type="text"
+                <textarea rows="36" class="form-control" id="rawDataString" type="text"
                     formControlName="rawDataString"></textarea>
             </div>
-            <br>
-            <button class="btn btn-primary mt-4" type="submit">Call API</button>
+            <div class="form-group">
+                <label for="file">Choose File</label>
+                <input type="file"
+                       id="file"
+                       (change)="handleFileInput($event)">
+            </div>
+            <button style="float: right;" class="btn btn-primary mt-4" type="submit">Call API</button>
+            <span style="color: red;" *ngIf="errorString != ''">{{this.errorString}}</span>
         </form>
     </div>
 </div>
