@@ -13,6 +13,10 @@ import { PersonalDetailsSecondLevelComponent } from './personal-details-second-l
 import { PersonalDetailsThirdLevelComponent } from './personal-details-third-level/personal-details-third-level.component';
 import { RiskAcceptanceComponent } from './risk-acceptance/risk-acceptance.component';
 import { SignaturesComponent } from './signatures/signatures.component';
+import { SignupMergedInitialAndAccountComponent } from './signup-merged-initial-and-account/signup-merged-initial-and-account.component';
+import { SignupInitialComponent } from './signup-initial/signup-initial.component';
+import { SignupAccountFundingComponent } from './signup-account-funding/signup-account-funding.component';
+import { SignupOtherDataComponent } from './signup-other-data/signup-other-data.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -28,7 +32,12 @@ const routes: Routes = [
   { path:"IdentificationProof", component: IdentificationProofComponent},
   { path:"Disclosures", component: DisclosuresComponent},
   { path:"FundingDetails", component: FundingDetailsComponent},
-  { path:"Signatures", component: SignaturesComponent}
+  { path:"Signatures", component: SignaturesComponent},
+  { path:"signupMergedInitialAndAccount", component: SignupMergedInitialAndAccountComponent},
+  { path:"signupInitial", component: SignupInitialComponent},
+  { path:"signupAccountFunding", component: SignupAccountFundingComponent},
+  { path:"signupOtherData", component: SignupOtherDataComponent},
+
 ];
 
 @NgModule({
