@@ -1,0 +1,336 @@
+<div class="container">
+    <span class="container" style="color: red;">{{this.info}}</span>
+  </div>
+  
+<div class="container">
+    <h3>Signup Merged Initial And Account</h3>
+    <div class="card card-body bg-light">
+        <form>
+            <div class="form-group">
+                <label>IsBusinessEntity</label>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                        <label class="form-check-label" for="IsBusinessEntityYes">
+                            <input class="form-check-input" type="radio" name="IsBusinessEntity"
+                                id="IsBusinessEntityYes" value="true" (click)="this.updateInfo($event)" />
+                            Yes
+                        </label>
+                        <label class="form-check-label ms-5" for="IsBusinessEntityNo">
+                            <input class="form-check-input" type="radio" name="IsBusinessEntity" id="IsBusinessEntityNo"
+                                value="false" clicked (click)="this.updateInfo($event)" />
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="UserIdentifierCode">UserIdentifierCode</label>
+                    <input type="text" class="form-control" id="UserIdentifierCode"
+                        placeholder="Enter Your Identifier Code" name="UserIdentifierCode">
+                </div>
+                <div class="mt-3">
+                    <label for="CompanyId">CompantId</label>
+                    <input type="text" class="form-control" id="CompanyId" placeholder="Enter Your Identifier Code"
+                        name="CompanyId">
+                </div>
+                <div class="mt-3">
+                    <label for="FirstName">FirstName</label>
+                    <input type="text" class="form-control" id="FirstName" placeholder="Enter Your Identifier Code"
+                        name="FirstName">
+                </div>
+                <div class="mt-3">
+                    <label for="LastName">LastName</label>
+                    <input type="text" class="form-control" id="LastName" placeholder="Enter Your Identifier Code"
+                        name="LastName">
+                </div>
+                <div class="mt-3">
+                    <label for="Address">Address</label>
+                    <textarea rows="2" class="form-control" id="Address" type="text" formControlName="Address"
+                        placeholder=""></textarea>
+                </div>
+                <div class="mt-3">
+                    <label for="DateOfBirth">DateOfBirth</label>
+                    <input type="datetime" class="form-control" id="DateOfBirth" name="DateOfBirth">
+                </div>
+                <div class="mt-3">
+                    <label for="AptOrSuite">AptOrSuite</label>
+                    <input type="text" class="form-control" id="AptOrSuite" placeholder="Enter Your Identifier Code"
+                        name="AptOrSuite">
+                </div>
+                <div class="mt-3">
+                    <label for="City">City</label>
+                    <input type="text" class="form-control" id="City" placeholder="Enter Your Identifier Code"
+                        name="City">
+                </div>
+                <div class="mt-3">
+                    <label for="ZipCode">ZipCode</label>
+                    <input type="text" class="form-control" id="ZipCode" placeholder="Enter Your Identifier Code"
+                        name="ZipCode">
+                </div>
+                <div class="mt-3">
+                    <label for="PhoneNumber">PhoneNumber</label>
+                    <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter Your Identifier Code"
+                        name="PhoneNumber">
+                </div>
+                <div class="mt-3">
+                    <label for="NumberOfDependents">NumberOfDependents</label>
+                    <input type="number" class="form-control" id="NumberOfDependents"
+                        placeholder="Enter Your Identifier Code" name="NumberOfDependents">
+                </div>
+                <div class="mt-3">
+                    <label for="MaritalStatus">MaritalStatus</label>
+                    <input type="text" class="form-control" id="MaritalStatus" placeholder="Enter Your Identifier Code"
+                        name="MaritalStatus">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentStatus">EmploymentStatus</label>
+                    <input type="text" class="form-control" id="EmploymentStatus"
+                        placeholder="Enter Your Identifier Code" name="EmploymentStatus">
+                </div>
+                <div class="mt-3">
+                    <label for="EmployerOrBusinessName">EmployerOrBusinessName</label>
+                    <input type="text" class="form-control" id="EmployerOrBusinessName"
+                        placeholder="Enter Your Identifier Code" name="EmployerOrBusinessName">
+                </div>
+                <div class="mt-3">
+                    <label for="OccupationOrComapnyType">OccupationOrComapnyType</label>
+                    <input type="text" class="form-control" id="OccupationOrComapnyType"
+                        placeholder="Enter Your Identifier Code" name="OccupationOrComapnyType">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentAddress">EmploymentAddress</label>
+                    <input type="text" class="form-control" id="EmploymentAddress"
+                        placeholder="Enter Your Identifier Code" name="EmploymentAddress">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentAptOrSuite">EmploymentAptOrSuite</label>
+                    <input type="text" class="form-control" id="EmploymentAptOrSuite"
+                        placeholder="Enter Your Identifier Code" name="EmploymentAptOrSuite">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentYearsOfExperience">EmploymentYearsOfExperience</label>
+                    <input type="text" class="form-control" id="EmploymentYearsOfExperience"
+                        placeholder="Enter Your Identifier Code" name="EmploymentYearsOfExperience">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentCountry">EmploymentCountry</label>
+                    <input type="text" class="form-control" id="EmploymentCountry"
+                        placeholder="Enter Your Identifier Code" name="EmploymentCountry">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentState">EmploymentState</label>
+                    <input type="text" class="form-control" id="EmploymentState"
+                        placeholder="Enter Your Identifier Code" name="EmploymentState">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentCity">EmploymentCity</label>
+                    <input type="text" class="form-control" id="EmploymentCity" placeholder="Enter Your Identifier Code"
+                        name="EmploymentCity">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentPhone">EmploymentPhone</label>
+                    <input type="text" class="form-control" id="EmploymentPhone"
+                        placeholder="Enter Your Identifier Code" name="EmploymentPhone">
+                </div>
+                <div class="mt-3">
+                    <label for="EmploymentFax">EmploymentFax</label>
+                    <input type="text" class="form-control" id="EmploymentFax" placeholder="Enter Your Identifier Code"
+                        name="EmploymentFax">
+                </div>
+                <div class="mt-3">
+                    <label>IsTrustedContactPersonAvailable</label>
+                    <div class="form-check">
+                        <label class="form-check-label" for="IsTrustedContactPersonAvailableYes">
+                            <input class="form-check-input" type="radio" name="IsTrustedContactPersonAvailable"
+                                id="IsTrustedContactPersonAvailableYes" value="true" />
+                            Yes
+                        </label>
+                        <label class="form-check-label ms-5" for="IsTrustedContactPersonAvailableNo">
+                            <input class="form-check-input" type="radio" name="IsTrustedContactPersonAvailable"
+                                id="IsTrustedContactPersonAvailableNo" value="false" checked />
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="TCPName">TCPName</label>
+                    <input type="text" class="form-control" id="TCPName" placeholder="Enter Your Identifier Code"
+                        name="TCPName">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPPhoneNumber">TCPPhoneNumber</label>
+                    <input type="text" class="form-control" id="TCPPhoneNumber" placeholder="Enter Your Identifier Code"
+                        name="TCPPhoneNumber">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPEmail">TCPEmail</label>
+                    <input type="text" class="form-control" id="TCPEmail" placeholder="Enter Your Identifier Code"
+                        name="TCPEmail">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPAddress">TCPAddress</label>
+                    <input type="text" class="form-control" id="TCPAddress" placeholder="Enter Your Identifier Code"
+                        name="TCPAddress">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPCountry">TCPCountry</label>
+                    <input type="text" class="form-control" id="TCPCountry" placeholder="Enter Your Identifier Code"
+                        name="TCPCountry">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPState">TCPState</label>
+                    <input type="text" class="form-control" id="TCPState" placeholder="Enter Your Identifier Code"
+                        name="TCPState">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPCity">TCPCity</label>
+                    <input type="text" class="form-control" id="TCPCity" placeholder="Enter Your Identifier Code"
+                        name="TCPCity">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPZip">TCPZip</label>
+                    <input type="text" class="form-control" id="TCPZip" placeholder="Enter Your Identifier Code"
+                        name="TCPZip">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPRelationToAccountHolder">TCPRelationToAccountHolder</label>
+                    <input type="text" class="form-control" id="TCPRelationToAccountHolder"
+                        placeholder="Enter Your Identifier Code" name="TCPRelationToAccountHolder">
+                </div>
+                <div class="mt-3">
+                    <label for="TCPDateOfBirth">TCPDateOfBirth</label>
+                    <input type="text" class="form-control" id="TCPDateOfBirth" placeholder="Enter Your Identifier Code"
+                        name="TCPDateOfBirth">
+                </div>
+                <div class="mt-3">
+                    <label>IsMailingAddressDifferent</label>
+                    <div class="form-check">
+                        <label class="form-check-label" for="IsMailingAddressDifferentYes">
+                            <input class="form-check-input" type="radio" name="IsMailingAddressDifferent"
+                                id="IsMailingAddressDifferentYes" value="true" />
+                            Yes
+                        </label>
+                        <label class="form-check-label ms-5" for="IsMailingAddressDifferentNo">
+                            <input class="form-check-input" type="radio" name="IsMailingAddressDifferent"
+                                id="IsMailingAddressDifferentNo" value="false" checked />
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="MAAddress">MAAddress</label>
+                    <input type="text" class="form-control" id="MAAddress" placeholder="Enter Your Identifier Code"
+                        name="MAAddress">
+                </div>
+                <div class="mt-3">
+                    <label for="MAAptOrSuite">MAAptOrSuite</label>
+                    <input type="text" class="form-control" id="MAAptOrSuite" placeholder="Enter Your Identifier Code"
+                        name="MAAptOrSuite">
+                </div>
+                <div class="mt-3">
+                    <label for="MACity">MACity</label>
+                    <input type="text" class="form-control" id="MACity" placeholder="Enter Your Identifier Code"
+                        name="MACity">
+                </div>
+                <div class="mt-3">
+                    <label for="MAZipCode">MAZipCode</label>
+                    <input type="text" class="form-control" id="MAZipCode" placeholder="Enter Your Identifier Code"
+                        name="MAZipCode">
+                </div>
+                <div class="mt-3">
+                    <label for="MACountry">MACountry</label>
+                    <input type="text" class="form-control" id="MACountry" placeholder="Enter Your Identifier Code"
+                        name="MACountry">
+                </div>
+                <div class="mt-3">
+                    <label for="MAState">MAState</label>
+                    <input type="text" class="form-control" id="MAState" placeholder="Enter Your Identifier Code"
+                        name="MAState">
+                </div>
+                <div class="mt-3">
+                    <label for="SSN">SSN</label>
+                    <input type="text" class="form-control" id="SSN" placeholder="Enter Your Identifier Code"
+                        name="SSN">
+                </div>
+                <div class="mt-3">
+                    <label for="ValidGovtIDType">ValidGovtIDType</label>
+                    <input type="text" class="form-control" id="ValidGovtIDType"
+                        placeholder="Enter Your Identifier Code" name="ValidGovtIDType">
+                </div>
+                <div class="mt-3">
+                    <label for="IDNumber">IDNumber</label>
+                    <input type="text" class="form-control" id="IDNumber" placeholder="Enter Your Identifier Code"
+                        name="IDNumber">
+                </div>
+                <div class="mt-3">
+                    <label for="IssueDate">IssueDate</label>
+                    <input type="datetime" class="form-control" id="IssueDate" name="IssueDate">
+                </div>
+                <div class="mt-3">
+                    <label for="ExpirationDate">ExpirationDate</label>
+                    <input type="datetime" class="form-control" id="ExpirationDate" name="ExpirationDate">
+                </div>
+                <div class="mt-3">
+                    <label for="FrontIdentification">FrontIdentification</label>
+                    <input type="file" class="form-control" id="FrontIdentification" name="FrontIdentification">
+                </div>
+                <div class="mt-3">
+                    <label for="BackIdentification">BackIdentification</label>
+                    <input type="file" class="form-control" id="BackIdentification" name="BackIdentification">
+                </div>
+                <div class="mt-3">
+                    <label for="UserSignature">UserSignature</label>
+                    <input type="file" class="form-control" id="UserSignature" name="UserSignature">
+                </div>
+                <div class="mt-3">
+                    <label for="InvestmentRiskTolerance">InvestmentRiskTolerance</label>
+                    <input type="text" class="form-control" id="InvestmentRiskTolerance"
+                        placeholder="Enter Your Identifier Code" name="InvestmentRiskTolerance">
+                </div>
+                <div class="mt-3">
+                    <label for="OtherIncomeSource">OtherIncomeSource</label>
+                    <input type="text" class="form-control" id="OtherIncomeSource"
+                        placeholder="Enter Your Identifier Code" name="OtherIncomeSource">
+                </div>
+                <div class="mt-3">
+                    <label for="AccountFundingBankName">AccountFundingBankName</label>
+                    <input type="text" class="form-control" id="AccountFundingBankName"
+                        placeholder="Enter Your Identifier Code" name="AccountFundingBankName">
+                </div>
+                <div class="mt-3">
+                    <label for="ABAOrSWIFT">ABAOrSWIFT</label>
+                    <input type="text" class="form-control" id="ABAOrSWIFT" placeholder="Enter Your Identifier Code"
+                        name="ABAOrSWIFT">
+                </div>
+                <div class="mt-3">
+                    <label for="AccountFundingBankAccountNumber">AccountFundingBankAccountNumber</label>
+                    <input type="text" class="form-control" id="AccountFundingBankAccountNumber"
+                        placeholder="Enter Your Identifier Code" name="AccountFundingBankAccountNumber">
+                </div>
+                <div class="mt-3">
+                    <label for="AccountFundingAccountType">AccountFundingAccountType</label>
+                    <input type="text" class="form-control" id="AccountFundingAccountType"
+                        placeholder="Enter Your Identifier Code" name="AccountFundingAccountType">
+                </div>
+                <div class="mt-3">
+                    <label for="AccountFundingAccountTitle">AccountFundingAccountTitle</label>
+                    <input type="text" class="form-control" id="AccountFundingAccountTitle"
+                        placeholder="Enter Your Identifier Code" name="AccountFundingAccountTitle">
+                </div>
+            </div>
+
+            <!-- <div>
+                <label for="rawDataString">
+                    Enter Your Identifier Code
+                </label>
+                <textarea rows="36" class="form-control" id="rawDataString" type="text"
+                    formControlName="rawDataString"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Choose File</label>
+                <input type="file" id="file" (change)="handleFileInput($event)">
+            </div>
+            <button style="float: right;" class="btn btn-primary mt-4" type="submit">Call API</button>
+            <span style="color: red;" *ngIf="errorString != ''">{{this.errorString}}</span> -->
+        </form>
+    </div>
+</div>
