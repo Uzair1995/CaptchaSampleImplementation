@@ -12,7 +12,7 @@ import { EncryptionService } from "../../services/encryption";
 export class PersonalDetailsFirstLevelComponent implements OnInit {
   checkoutForm: any;
   errorString: string = "";
-  fileToUpload: File;
+  fileToUpload: File | undefined;
 
   constructor() { }
 
@@ -43,16 +43,15 @@ export class PersonalDetailsFirstLevelComponent implements OnInit {
   }
 
   addFileInFormData(formData: FormData) {
-    formData.append("frontIdentification", this.fileToUpload ? this.fileToUpload, fileToUpload.name);
-    return this.httpClient
-      .post(endpoint, formData, { headers: yourHeadersConfig })
-      .map(() => { return true; })
-      .catch((e) => this.handleError(e));
+    if (this.fileToUpload != undefined)
+      formData.append("frontIdentification", this.fileToUpload, this.fileToUpload.name);
+
+    return formData;
   }
 
   async personalDetailsFirstLevelRequest(body: string): Promise<any> {
     let data = EncryptionService.EncryptFormData(JSON.parse(body));
-
+    data = this.addFileInFormData(data);
     debugger;
 
     let config: AxiosRequestConfig = {
