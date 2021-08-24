@@ -33,10 +33,10 @@ const routes: Routes = [
   { path:"Disclosures", component: DisclosuresComponent},
   { path:"FundingDetails", component: FundingDetailsComponent},
   { path:"Signatures", component: SignaturesComponent},
-  { path:"signupMergedInitialAndAccount", component: SignupMergedInitialAndAccountComponent},
-  { path:"signupInitial", component: SignupInitialComponent},
-  { path:"signupAccountFunding", component: SignupAccountFundingComponent},
-  { path:"signupOtherData", component: SignupOtherDataComponent},
+  { path:"SignupMergedInitialAndAccount", component: SignupMergedInitialAndAccountComponent},
+  { path:"SignupInitial", component: SignupInitialComponent},
+  { path:"SignupAccountFunding", component: SignupAccountFundingComponent},
+  { path:"SignupOtherData", component: SignupOtherDataComponent},
 
 ];
 

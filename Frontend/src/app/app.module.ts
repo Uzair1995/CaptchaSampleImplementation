@@ -21,7 +21,6 @@ import { DisclosuresComponent } from './disclosures/disclosures.component';
 import { FundingDetailsComponent } from './funding-details/funding-details.component';
 import { SignaturesComponent } from './signatures/signatures.component';
 import { BreadCrumbsComponent } from './bread-crumbs/bread-crumbs.component';
-import { BreadCrumbs2Component } from './bread-crumbs2/bread-crumbs2.component';
 import { SignupOtherDataComponent } from './signup-other-data/signup-other-data.component';
 import { SignupInitialComponent } from './signup-initial/signup-initial.component';
 import { SignupAccountFundingComponent } from './signup-account-funding/signup-account-funding.component';
@@ -54,7 +53,6 @@ import { SignupMergedInitialAndAccountComponent } from './signup-merged-initial-
     FundingDetailsComponent,
     SignaturesComponent,
     BreadCrumbsComponent,
-    BreadCrumbs2Component,
     SignupOtherDataComponent,
     SignupInitialComponent,
     SignupAccountFundingComponent,

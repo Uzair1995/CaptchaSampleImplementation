@@ -17,7 +17,7 @@ export class BreadCrumbsComponent implements OnInit {
       for (let i = 0; i < allAnchorElements.length; i++) {
         let element = allAnchorElements.item(i);
         let boolCheck = element?.href.includes(currentRoute);
-        if (boolCheck) {
+        if (boolCheck && currentRoute != "") {
           element?.parentElement?.classList.add("active");
         }
         else {
